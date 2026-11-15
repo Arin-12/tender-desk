@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+tender/
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Frontend
+node_modules/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+# Tender data and generated artifacts
+data/uploads/*
+!data/uploads/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/vectorstore/*
+!data/vectorstore/.gitkeep
+data/cache/*
+!data/cache/.gitkeep
+
+# Evaluation outputs and private working notes
+evaluation/results*.csv
+evaluation/evidence_review.txt
+evaluation/__pycache__/
+
+# Temporary development patches
+eval_context_patch/
+improvements_patch/
+
+# Generated archives
+*.zip
+
+# Local working files - not for public repository
+/Tender Desk.txt
+/Tender_Desk_Major_Project_Report.docx
+/package-lock.json
+
+# Local utility scripts - excluded from public repository
+/create_zip.py
+/test_structure.py
+
+# Generated retrieval evaluation reports and result tables
+/evaluation/retrieval_*.csv
+/evaluation/retrieval_*.md
